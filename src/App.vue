@@ -19,7 +19,11 @@ import Teams from './components/Teams.vue';
     Teams
   },
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+  created() {
+    this.$store.dispatch("initialize");
+  }
+}
 </script>
 
 <style>

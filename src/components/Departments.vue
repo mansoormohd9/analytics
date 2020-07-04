@@ -5,7 +5,7 @@
         <p class="title">Objectives on Track</p>
         <p class="custom-subtitle">All departments</p>
         <div class="content">
-          <!-- Content -->
+          <DepartmentCard v-for="(department, index) in departments" :key="index" :department="department"></DepartmentCard>
         </div>
       </article>
     </div>
@@ -14,17 +14,21 @@
 
 <script lang="ts">
 import { Vue, Component } from "vue-property-decorator";
+import DepartmentCard from "./DepartmentCard.vue";
 const departmentView = "department";
-const teamView = "team";
 
-@Component
-export default class Departments extends Vue{  
-  get isDepartmentView(){
-    return this.$store.getters.currentView == departmentView;
+@Component({
+  components: {
+    DepartmentCard
+  }
+})
+export default class Departments extends Vue{
+  get departments() {
+    return this.$store.getters.getDepartments;
   }
 
-  setTeamView(){
-    this.$store.commit("setView", teamView);
+  get isDepartmentView(){
+    return this.$store.getters.currentView == departmentView;
   }
 }
 </script>
