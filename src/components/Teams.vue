@@ -33,7 +33,7 @@ export default class Teams extends Vue{
     return this.$store.getters.currentView == teamView;
   }
 
-  setDepartmentView(){
+  setDepartmentView() {
     this.$store.commit("setView", {view: departmentView, departmentId: 1});
   }
 }
