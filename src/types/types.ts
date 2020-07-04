@@ -1,5 +1,6 @@
 export interface AppState {
   departments: Array<Department>;
+  currentView: string;
 }
 
 export interface Department {
@@ -7,6 +8,8 @@ export interface Department {
   name: string;
   description: string;
   aggregatedObjective: number;
+  objectives: number;
+  employees: number;
 }
 
 export interface Team {

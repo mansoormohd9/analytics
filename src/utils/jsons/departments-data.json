@@ -1,0 +1,66 @@
+[
+  {
+     "id":1,
+     "name":"Sales",
+     "description":"Sales Description",
+     "aggregatedObjective":0.5,
+     "objectives": 50,
+     "employees": 10
+  },
+  {
+    "id":2,
+    "name":"Engineering",
+    "description":"Engineering Description",
+    "aggregatedObjective":1,
+    "objectives": 15,
+    "employees": 9
+  },
+  {
+    "id":3,
+    "name":"Product",
+    "description":"Product Description",
+    "aggregatedObjective":0.75,
+    "objectives": 13,
+    "employees": 12
+  },
+  {
+    "id":4,
+    "name":"Manufacturing",
+    "description":"Manufacturing Description",
+    "aggregatedObjective":0.6,
+    "objectives": 12,
+    "employees": 10
+  },
+  {
+    "id":5,
+    "name":"Custom Success",
+    "description":"Customer Success Description",
+    "aggregatedObjective":0.5,
+    "objectives": 10,
+    "employees": 5
+  },
+  {
+    "id":6,
+    "name":"HR Ops",
+    "description":"HR Ops",
+    "aggregatedObjective":0.5,
+    "objectives": 5,
+    "employees": 3
+  },
+  {
+    "id":7,
+    "name":"IT",
+    "description":"IT Description",
+    "aggregatedObjective":0.7,
+    "objectives": 3,
+    "employees": 3
+  },
+  {
+    "id":8,
+    "name":"Legal",
+    "description":"Legal Description",
+    "aggregatedObjective":0.8,
+    "objectives": 2,
+    "employees": 1
+  }
+]
