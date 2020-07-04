@@ -20,5 +20,18 @@ yarn build
 yarn lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Completed
+```
+Most of the requiremnt shared has been done apart from few missing css stylings
+```
+
+### Not completed
+```
+I think tests cases is something that would be good to add to make this complete but given I have assigned myself a constrained time I wasn't able to do that
+```
+
+### Known Bugs and Limitations
+```
+- Width and height of departments are being computed dynamically but there is a limitation that this doesn't occupy the complete available div
+- Few icons and stylings are not as per the image shared and css can be improved further
+```
