@@ -46,6 +46,7 @@ export default class Teams extends Vue{
 }
 span.custom-subtitle{
   color: cyan;
+  font-size: large;
 }
 span.custom-subtitle-child{
   color: gray;

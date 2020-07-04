@@ -4,7 +4,7 @@
      "name":"Sales",
      "description":"Sales Description",
      "aggregatedObjective":0.5,
-     "objectives": 50,
+     "objectives": 40,
      "employees": 10
   },
   {
@@ -44,7 +44,7 @@
     "name":"HR Ops",
     "description":"HR Ops",
     "aggregatedObjective":0.5,
-    "objectives": 5,
+    "objectives": 10,
     "employees": 3
   },
   {
@@ -52,7 +52,7 @@
     "name":"IT",
     "description":"IT Description",
     "aggregatedObjective":0.7,
-    "objectives": 3,
+    "objectives": 8,
     "employees": 3
   },
   {
