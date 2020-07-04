@@ -1,3 +1,7 @@
+export interface AppState {
+  departments: Array<Department>;
+}
+
 export interface Department {
   id: number;
   name: string;
