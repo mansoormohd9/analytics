@@ -25,7 +25,14 @@ export default class TeamCard extends Vue {
 
 <style scoped>
 .card.team-card {
-  width: 300px;
+  width: 32%;
   height: 200px;
+  display: inline-flex;
+  margin: 5px;
+}
+@media screen and (max-width: 600px){
+  .card.team-card {
+    width: 90%;
+  }
 }
 </style>
