@@ -8,8 +8,8 @@ const getters: GetterTree<AppState, AppState> = {
   getDepartments(state: AppState) {
     return state.departments;
   },
-  getTeams(state: AppState, departmentId: number) {
-    return state.teams.filter(team => team.departmentId == departmentId);
+  getTeams(state: AppState) {
+    return state.teams.filter(team => team.departmentId == state.currentDepartmentId);
   }
 };
 

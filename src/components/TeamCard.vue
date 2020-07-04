@@ -2,7 +2,7 @@
   <div class="card">
     <div class="card-content">
       <div class="content">
-        {{team}}'s Team
+        {{team.name}}'s Team
       </div>
     </div>
   </div>

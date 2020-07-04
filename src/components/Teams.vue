@@ -6,7 +6,7 @@
         <p class="custom-subtitle" v-on:click="setDepartmentView">All departments ></p>
         <p class="custom-subtitle-child">Product</p>
         <div class="content">
-          <TeamCard v-for="(id, team) in teams" :key="id" :team="team"></TeamCard>
+          <TeamCard v-for="(team, index) in teams" :key="index" :team="team"></TeamCard>
         </div>
       </article>
     </div>
