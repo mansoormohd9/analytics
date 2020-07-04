@@ -3,6 +3,11 @@
     <div class="tile">
       <article class="tile is-child box">
         <p class="title">Objectives on Track</p>
+        <section>
+          <b-progress type="is-success" show-value format="percent" :value="75"></b-progress>
+          <p class="objective">60/80 objectives</p>
+          <p>since Monday</p>
+      </section>
       </article>
     </div>
   </div>

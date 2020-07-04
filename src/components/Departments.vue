@@ -2,8 +2,7 @@
   <div class="tile is-ancestor department" v-show="isDepartmentView">
     <div class="tile">
       <article class="tile is-child box">
-        <p class="title">Objectives on Track</p>
-        <p class="custom-subtitle">All departments</p>
+        <p class="title">Objectives on Track <span class="custom-subtitle">All departments</span></p>
         <div class="content">
           <DepartmentCard v-for="(department, index) in departments" :key="index" :department="department"></DepartmentCard>
         </div>
@@ -37,7 +36,8 @@ export default class Departments extends Vue{
 .tile.department {
   margin: 50px;
 }
-p.custom-subtitle{
+span.custom-subtitle{
+  font-size: large;
   color: grey;
 }
 </style>

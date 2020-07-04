@@ -2,9 +2,10 @@
   <div class="tile is-ancestor team" v-show="isTeamView">
     <div class="tile">
       <article class="tile is-child box">
-        <p class="title">Objectives on Track</p>
-        <p class="custom-subtitle" v-on:click="setDepartmentView">All departments ></p>
-        <p class="custom-subtitle-child">Product</p>
+        <p class="title">Objectives on Track
+          <span class="custom-subtitle" v-on:click="setDepartmentView">All departments > </span>
+          <span class="custom-subtitle-child">Product</span>
+        </p>
         <div class="content">
           <TeamCard v-for="(team, index) in teams" :key="index" :team="team"></TeamCard>
         </div>
@@ -43,10 +44,11 @@ export default class Teams extends Vue{
 .tile.team {
   margin: 50px;
 }
-p.custom-subtitle{
+span.custom-subtitle{
   color: cyan;
 }
-p.custom-subtitle-child{
+span.custom-subtitle-child{
   color: gray;
+  font-size: large;
 }
 </style>
