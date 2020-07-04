@@ -1,4 +1,5 @@
 # analytics
+Demo Available at https://analytics-ui-demo.herokuapp.com/
 
 ## Project setup
 ```
@@ -22,7 +23,7 @@ yarn lint
 
 ### Completed
 ```
-Most of the requiremnt shared has been done apart from few missing css stylings
+Most of the requirement shared has been done apart from few missing css stylings
 ```
 
 ### Not completed
