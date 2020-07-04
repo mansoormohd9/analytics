@@ -1,6 +1,8 @@
 export interface AppState {
   departments: Array<Department>;
+  teams: Array<Team>;
   currentView: string;
+  currentDepartmentId: number;
 }
 
 export interface Department {

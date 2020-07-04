@@ -18,7 +18,7 @@ export default class DepartmentCard extends Vue {
   @Prop({required: true}) department!: Department;  
 
   setTeamView(){
-    this.$store.commit("setView", teamView);
+    this.$store.commit("setView", {view: teamView, departmentId: this.department.id});
   }
 }
 </script>

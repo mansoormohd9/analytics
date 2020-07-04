@@ -6,7 +6,7 @@
         <p class="custom-subtitle" v-on:click="setDepartmentView">All departments ></p>
         <p class="custom-subtitle-child">Product</p>
         <div class="content">
-          asdasdasdasd
+          <TeamCard v-for="(id, team) in teams" :key="id" :team="team"></TeamCard>
         </div>
       </article>
     </div>
@@ -15,17 +15,26 @@
 
 <script lang="ts">
 import { Vue, Component } from "vue-property-decorator";
+import TeamCard from "./TeamCard.vue";
 const teamView = "team";
 const departmentView = "department";
 
-@Component
-export default class Teams extends Vue{  
+@Component({
+  components: {
+    TeamCard
+  }
+})
+export default class Teams extends Vue{
+  get teams() {
+    return this.$store.getters.getTeams;
+  }
+
   get isTeamView(){
     return this.$store.getters.currentView == teamView;
   }
 
   setDepartmentView(){
-    this.$store.commit("setView", departmentView);
+    this.$store.commit("setView", {view: departmentView, departmentId: 1});
   }
 }
 </script>
